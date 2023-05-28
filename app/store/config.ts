@@ -84,6 +84,7 @@ export const ALL_MODELS = [
     name: "gpt-3.5-turbo-0301",
     available: true,
   },
+  /*
   {
     name: "qwen-v1", // 通义千问
     available: false,
@@ -104,6 +105,7 @@ export const ALL_MODELS = [
     name: "chatglm", // chatglm-6b
     available: false,
   },
+  */
 ] as const;
 
 export type ModelType = (typeof ALL_MODELS)[number]["name"];
@@ -132,7 +134,7 @@ export const ModalConfigValidator = {
     return limitModel(x) as ModelType;
   },
   max_tokens(x: number) {
-    return limitNumber(x, 0, 32000, 2000);
+    return limitNumber(x, 0, 32000, 3000);
   },
   presence_penalty(x: number) {
     return limitNumber(x, -2, 2, 0);
