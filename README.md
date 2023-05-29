@@ -1,3 +1,7 @@
+## 写在开头
+关于本项目的声明：<br>
+本项目基于[ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web)进行二次开发，目前正在开发中，下面信息为原作者信息，暂未进行修改，仅做参考。考虑到原项目仍在维护更新，原项目停更后，即该项目完全脱离并进行自主更新。
+<hr>
 <div align="center">
 <img src="./docs/images/icon.svg" alt="icon"/>
 
