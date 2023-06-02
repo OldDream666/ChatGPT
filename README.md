@@ -1,7 +1,7 @@
 ## 写在开头
 关于本项目的声明：<br>
 本项目基于[ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web)进行二次开发，目前正在开发中，下面信息为原作者信息，暂未进行修改，仅做参考。考虑到原项目仍在维护更新，原项目停更后，即该项目完全脱离并进行自主更新。
-<hr>
+---
 <div align="center">
 <img src="./docs/images/icon.svg" alt="icon"/>
 
@@ -25,11 +25,6 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 
 </div>
 
-## 重要通知
-## 本项目静默停更至 2023-06-03，不接受任何问题反馈，只接受社区 Pull Request，请在 PR 中详细描述解决的问题，否则会被立即关闭。
-
-## Attention
-## This project wont make any updates until June 3rd, 2023, and will not accept any issue feedback. Only community Pull Requests will be accepted, and please provide a detailed description of the problem being solved in the PR, otherwise it will be immediately closed.
 
 ## Features
 
