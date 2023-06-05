@@ -154,6 +154,11 @@ const vi: LocaleType = {
       Title: "Chủ đề mới (presence_penalty)",
       SubTitle: "Giá trị càng lớn tăng khả năng mở rộng sang các chủ đề mới",
     },
+    GitHub: {
+      Title: "Địa chỉ GitHub của dự án này",
+      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Buttontext: "Đi đến GitHub",
+    },
   },
   Store: {
     DefaultTopic: "Cuộc trò chuyện mới",

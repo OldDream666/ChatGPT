@@ -157,7 +157,13 @@ const ru: LocaleType = {
       SubTitle:
         "Чем выше значение, тем больше вероятность общения на новые темы",
     },
+    GitHub: {
+      Title: "Адрес GitHub этого проекта",
+      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Buttontext: "Перейти на GitHub",
+    },
   },
+
   Store: {
     DefaultTopic: "Новый разговор",
     BotHello: "Здравствуйте! Как я могу вам помочь сегодня?",

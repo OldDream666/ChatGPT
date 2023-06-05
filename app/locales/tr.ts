@@ -158,6 +158,11 @@ const tr: LocaleType = {
       SubTitle:
         "Daha büyük bir değer, yeni konular hakkında konuşma olasılığını artırır",
     },
+    GitHub: {
+      Title: "Bu projenin GitHub adresi",
+      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Buttontext: "GitHub'a git",
+    },
   },
   Store: {
     DefaultTopic: "Yeni Konuşma",

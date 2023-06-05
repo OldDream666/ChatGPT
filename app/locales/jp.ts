@@ -158,6 +158,11 @@ const jp: LocaleType = {
       Title: "トピックの新鮮度 (presence_penalty)",
       SubTitle: "値が大きいほど、新しいトピックへの展開が可能になります。",
     },
+    GitHub: {
+      Title: "このプロジェクトのGitHubアドレス",
+      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Buttontext: "GitHubに移動",
+    },
   },
   Store: {
     DefaultTopic: "新しいチャット",

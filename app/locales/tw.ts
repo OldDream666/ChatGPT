@@ -152,6 +152,11 @@ const tw: LocaleType = {
       Title: "話題新穎度 (presence_penalty)",
       SubTitle: "值越大，越有可能擴展到新話題",
     },
+    GitHub: {
+      Title: "該項目GitHub地址",
+      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Buttontext: "點擊前往",
+    },
   },
   Store: {
     DefaultTopic: "新的對話",

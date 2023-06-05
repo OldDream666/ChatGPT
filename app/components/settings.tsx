@@ -10,6 +10,7 @@ import ClearIcon from "../icons/clear.svg";
 import LoadingIcon from "../icons/three-dots.svg";
 import EditIcon from "../icons/edit.svg";
 import EyeIcon from "../icons/eye.svg";
+import GithubIcon from "../icons/github.svg";
 import {
   Input,
   List,
@@ -584,6 +585,19 @@ export function Settings() {
               config.update((config) => (config.modelConfig = modelConfig));
             }}
           />
+
+          <ListItem
+            title={Locale.Settings.GitHub.Title}
+            subTitle={Locale.Settings.GitHub.Subtitle}
+          >
+            <IconButton
+              icon={<GithubIcon />}
+              text={Locale.Settings.GitHub.Buttontext}
+              onClick={() =>
+                window.open("https://github.com/olddream666/chatgpt")
+              }
+            />
+          </ListItem>
         </List>
 
         {shouldShowPromptModal && (

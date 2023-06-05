@@ -173,10 +173,15 @@ const cn = {
       Title: "话题新鲜度 (presence_penalty)",
       SubTitle: "值越大，越有可能扩展到新话题",
     },
+    GitHub: {
+      Title: "该项目GitHub地址",
+      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Buttontext: "点击前往",
+    },
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: "有什么可以帮你的吗？我可以回答一切问题，试着问我吧。",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,

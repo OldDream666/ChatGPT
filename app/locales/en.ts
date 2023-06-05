@@ -175,6 +175,11 @@ const en: RequiredLocaleType = {
       SubTitle:
         "A larger value increases the likelihood to talk about new topics",
     },
+    GitHub: {
+      Title: "The GitHub address of this project",
+      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Buttontext: "Go to GitHub",
+    },
   },
   Store: {
     DefaultTopic: "New Conversation",

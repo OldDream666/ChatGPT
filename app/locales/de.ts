@@ -158,6 +158,11 @@ const de: LocaleType = {
       SubTitle:
         "Ein größerer Wert erhöht die Wahrscheinlichkeit, dass über neue Themen gesprochen wird",
     },
+    GitHub: {
+      Title: "Die GitHub-Adresse dieses Projekts",
+      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Buttontext: "Zu GitHub gehen",
+    },
   },
   Store: {
     DefaultTopic: "Neues Gespräch",

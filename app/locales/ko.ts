@@ -154,6 +154,11 @@ const ko: LocaleType = {
       Title: "존재 페널티 (presence_penalty)",
       SubTitle: "값이 클수록 새로운 주제에 대해 대화할 가능성이 높아집니다.",
     },
+    GitHub: {
+      Title: "이 프로젝트의 GitHub 주소",
+      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Buttontext: "GitHub으로 이동",
+    },
   },
   Store: {
     DefaultTopic: "새 대화",

@@ -155,6 +155,11 @@ const cs: LocaleType = {
       Title: "Přítomnostní korekce",
       SubTitle: "Větší hodnota zvyšuje pravděpodobnost nových témat.",
     },
+    GitHub: {
+      Title: "GitHub adresa tohoto projektu",
+      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Buttontext: "Jít na GitHub",
+    },
   },
   Store: {
     DefaultTopic: "Nová konverzace",
