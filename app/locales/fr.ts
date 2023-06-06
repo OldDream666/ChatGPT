@@ -161,7 +161,7 @@ const fr: LocaleType = {
     },
     GitHub: {
       Title: "L'adresse GitHub de ce projet",
-      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Subtitle: "http://github.com/olddream666/ChatGPT",
       Buttontext: "Aller à GitHub",
     },
   },

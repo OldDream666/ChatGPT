@@ -156,7 +156,7 @@ const ko: LocaleType = {
     },
     GitHub: {
       Title: "이 프로젝트의 GitHub 주소",
-      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Subtitle: "http://github.com/olddream666/ChatGPT",
       Buttontext: "GitHub으로 이동",
     },
   },

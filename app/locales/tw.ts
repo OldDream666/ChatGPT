@@ -154,7 +154,7 @@ const tw: LocaleType = {
     },
     GitHub: {
       Title: "該項目GitHub地址",
-      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Subtitle: "http://github.com/olddream666/ChatGPT",
       Buttontext: "點擊前往",
     },
   },

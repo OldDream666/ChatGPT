@@ -177,7 +177,7 @@ const en: RequiredLocaleType = {
     },
     GitHub: {
       Title: "The GitHub address of this project",
-      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Subtitle: "http://github.com/olddream666/ChatGPT",
       Buttontext: "Go to GitHub",
     },
   },

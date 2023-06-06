@@ -160,7 +160,7 @@ const jp: LocaleType = {
     },
     GitHub: {
       Title: "このプロジェクトのGitHubアドレス",
-      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Subtitle: "http://github.com/olddream666/ChatGPT",
       Buttontext: "GitHubに移動",
     },
   },

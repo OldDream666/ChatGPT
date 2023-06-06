@@ -156,7 +156,7 @@ const vi: LocaleType = {
     },
     GitHub: {
       Title: "Địa chỉ GitHub của dự án này",
-      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Subtitle: "http://github.com/olddream666/ChatGPT",
       Buttontext: "Đi đến GitHub",
     },
   },

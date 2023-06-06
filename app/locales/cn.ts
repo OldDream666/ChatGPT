@@ -175,7 +175,7 @@ const cn = {
     },
     GitHub: {
       Title: "该项目GitHub地址",
-      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Subtitle: "http://github.com/olddream666/ChatGPT",
       Buttontext: "点击前往",
     },
   },

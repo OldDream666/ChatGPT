@@ -11,6 +11,7 @@ import LoadingIcon from "../icons/three-dots.svg";
 import EditIcon from "../icons/edit.svg";
 import EyeIcon from "../icons/eye.svg";
 import GithubIcon from "../icons/github.svg";
+import { REPO_URL } from "../constant";
 import {
   Input,
   List,
@@ -593,9 +594,7 @@ export function Settings() {
             <IconButton
               icon={<GithubIcon />}
               text={Locale.Settings.GitHub.Buttontext}
-              onClick={() =>
-                window.open("https://github.com/olddream666/chatgpt")
-              }
+              onClick={() => window.open(REPO_URL)}
             />
           </ListItem>
         </List>

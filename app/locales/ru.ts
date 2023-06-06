@@ -159,7 +159,7 @@ const ru: LocaleType = {
     },
     GitHub: {
       Title: "Адрес GitHub этого проекта",
-      Subtitle: "http://github.com/olddream666/ChatGPt",
+      Subtitle: "http://github.com/olddream666/ChatGPT",
       Buttontext: "Перейти на GitHub",
     },
   },
