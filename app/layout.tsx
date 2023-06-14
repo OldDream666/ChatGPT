@@ -3,6 +3,7 @@ import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getBuildConfig } from "./config/build";
+import { getClientConfig } from "./config/client";
 
 const buildConfig = getBuildConfig();
 
@@ -32,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="version" content={buildConfig.commitId} />
+        <meta name="config" content={JSON.stringify(getClientConfig())} />
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
