@@ -1,3 +1,4 @@
+import { getClientConfig } from "../config/client";
 import { ACCESS_CODE_PREFIX } from "../constant";
 import { ChatMessage, ModelType, useAccessStore } from "../store";
 import { ChatGPTApi } from "./platforms/openai";
@@ -86,14 +87,18 @@ export class ClientApi {
         {
           from: "human",
           value:
-            "Share from [OD-ChatGPT]: https://github.com/olddream666/ChatGPT",
+            "Share from [ChatGPT Next Web]: https://github.com/Yidadaa/ChatGPT-Next-Web",
         },
       ]);
     // 敬告二开开发者们，为了开源大模型的发展，请不要修改上述消息，此消息用于后续数据清洗使用
     // Please do not modify this message
 
     console.log("[Share]", msgs);
-    const res = await fetch("/sharegpt", {
+    const clientConfig = getClientConfig();
+    const proxyUrl = "/sharegpt";
+    const rawUrl = "https://sharegpt.com/api/conversations";
+    const shareUrl = clientConfig?.isApp ? rawUrl : proxyUrl;
+    const res = await fetch(shareUrl, {
       body: JSON.stringify({
         avatarUrl,
         items: msgs,

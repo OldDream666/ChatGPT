@@ -4,6 +4,7 @@ export const getBuildConfig = () => {
       "[Server Config] you are importing a nodejs-only module outside of nodejs",
     );
   }
+
   const COMMIT_ID: string = (() => {
     try {
       const childProcess = require("child_process");
@@ -20,6 +21,7 @@ export const getBuildConfig = () => {
   return {
     commitId: COMMIT_ID,
     buildMode: process.env.BUILD_MODE ?? "standalone",
+    isApp: !!process.env.BUILD_APP,
   };
 };
 
