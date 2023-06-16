@@ -9,7 +9,7 @@ const cn = {
   Auth: {
     Title: "需要密码",
     Tips: "管理员开启了密码验证，请在下方填入访问密码",
-    Input: "在此处填写访问秘密码",
+    Input: "在此处填写访问密码",
     Confirm: "确认",
     Later: "稍后再说",
   },
