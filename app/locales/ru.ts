@@ -1,7 +1,7 @@
 import { SubmitKey } from "../store/config";
-import type { LocaleType } from "./index";
+import type { PartialLocaleType } from "./index";
 
-const ru: LocaleType = {
+const ru: PartialLocaleType = {
   WIP: "Скоро...",
   Error: {
     Unauthorized:
@@ -157,13 +157,17 @@ const ru: LocaleType = {
       SubTitle:
         "Чем выше значение, тем больше вероятность общения на новые темы",
     },
+    FrequencyPenalty: {
+      Title: "Штраф за частоту",
+      SubTitle:
+        "Большее значение снижает вероятность повторения одной и той же строки",
+    },
     GitHub: {
       Title: "Адрес GitHub этого проекта",
       Subtitle: "http://github.com/olddream666/ChatGPT",
       Buttontext: "Перейти на GitHub",
     },
   },
-
   Store: {
     DefaultTopic: "Новый разговор",
     BotHello: "Здравствуйте! Как я могу вам помочь сегодня?",
@@ -237,6 +241,12 @@ const ru: LocaleType = {
     Close: "Закрыть",
     Create: "Создать",
     Edit: "Редактировать",
+  },
+  Exporter: {
+    Model: "Модель",
+    Messages: "Сообщения",
+    Topic: "Тема",
+    Time: "Время",
   },
 };
 
