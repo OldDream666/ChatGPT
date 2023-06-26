@@ -6,7 +6,7 @@ import { getClientConfig } from "./config/client";
 
 export const metadata = {
   title: "OD-ChatGPT",
-  description: "Your personal ChatGPT Chat Bot.",
+  description: "Your personal ChatGPT Chat Bot(For OldDream).",
   viewport: {
     width: "device-width",
     initialScale: 1,
