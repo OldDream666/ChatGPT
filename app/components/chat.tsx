@@ -959,7 +959,7 @@ export function Chat() {
                             marginBottom: 0,
                           }}
                         >
-                          {message.streaming ? (
+                                                    {message.streaming ? (
                             <ChatAction
                               text={Locale.Chat.Actions.Stop}
                               icon={<StopIcon />}
@@ -995,8 +995,8 @@ export function Chat() {
                       </div>
                     )}
                   </div>
-
-                  {showActions && (
+                  
+ {showActions && (
                     <div className={styles["chat-message-action-date"]}>
                       {message.date.toLocaleString()}
                     </div>

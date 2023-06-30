@@ -40,6 +40,14 @@ const en: LocaleType = {
       clear: "Clear Context",
       del: "Delete Chat",
     },
+    Commands: {
+      new: "Start a new chat",
+      newm: "Start a new chat with mask",
+      next: "Next Chat",
+      prev: "Previous Chat",
+      clear: "Clear Context",
+      del: "Delete Chat",
+    },
     InputActions: {
       Stop: "Stop",
       ToBottom: "To Latest",
