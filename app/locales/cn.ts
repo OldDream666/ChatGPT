@@ -39,14 +39,6 @@ const cn = {
       clear: "清除上下文",
       del: "删除聊天",
     },
-    Commands: {
-      new: "新建聊天",
-      newm: "从面具新建聊天",
-      next: "下一个聊天",
-      prev: "上一个聊天",
-      clear: "清除上下文",
-      del: "删除聊天",
-    },
     InputActions: {
       Stop: "停止响应",
       ToBottom: "滚到最新",
