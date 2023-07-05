@@ -7,9 +7,9 @@
     "distDir": "../out",
     "withGlobalTauri": true
   },
-"package": {
+  "package": {
     "productName": "OD-ChatGPT",
-    "version": "2.8.6"
+    "version": "2.8.7"
   },
   "tauri": {
     "allowlist": {
@@ -98,7 +98,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "ChatGPT Next Web",
+        "title": "OD-ChatGPT",
         "width": 960,
         "hiddenTitle": true,
         "titleBarStyle": "Overlay"
