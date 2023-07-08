@@ -87,8 +87,10 @@ const cs: PartialLocaleType = {
       SubTitle: "Zobrazit v náhledu bubliny",
     },
     Mask: {
-      Title: "Úvodní obrazovka Masek",
-      SubTitle: "Před zahájením nového chatu zobrazte úvodní obrazovku Masek",
+      Splash: {
+        Title: "Úvodní obrazovka Masek",
+        SubTitle: "Před zahájením nového chatu zobrazte úvodní obrazovku Masek",
+      },
     },
     Prompt: {
       Disable: {
@@ -153,11 +155,6 @@ const cs: PartialLocaleType = {
       Title: "Frekvenční penalizace",
       SubTitle:
         "Větší hodnota snižující pravděpodobnost opakování stejného řádku",
-    },
-    GitHub: {
-      Title: "GitHub adresa tohoto projektu",
-      Subtitle: "http://github.com/olddream666/ChatGPT",
-      Buttontext: "Jít na GitHub",
     },
   },
   Store: {

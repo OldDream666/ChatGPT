@@ -342,6 +342,10 @@ export function Settings() {
   };
   const [loadingUsage, setLoadingUsage] = useState(false);
   function checkUsage(force = false) {
+    if (accessStore.hideBalanceQuery) {
+      return;
+    }
+
     setLoadingUsage(true);
     updateStore.updateUsage(force).finally(() => {
       setLoadingUsage(false);
@@ -540,10 +544,12 @@ export function Settings() {
               }
             ></input>
           </ListItem>
+        </List>
 
+        <List>
           <ListItem
-            title={Locale.Settings.Mask.Title}
-            subTitle={Locale.Settings.Mask.SubTitle}
+            title={Locale.Settings.Mask.Splash.Title}
+            subTitle={Locale.Settings.Mask.Splash.SubTitle}
           >
             <input
               type="checkbox"
@@ -553,6 +559,22 @@ export function Settings() {
                   (config) =>
                     (config.dontShowMaskSplashScreen =
                       !e.currentTarget.checked),
+                )
+              }
+            ></input>
+          </ListItem>
+
+          <ListItem
+            title={Locale.Settings.Mask.Builtin.Title}
+            subTitle={Locale.Settings.Mask.Builtin.SubTitle}
+          >
+            <input
+              type="checkbox"
+              checked={config.hideBuiltinMasks}
+              onChange={(e) =>
+                updateConfig(
+                  (config) =>
+                    (config.hideBuiltinMasks = e.currentTarget.checked),
                 )
               }
             ></input>
@@ -579,19 +601,34 @@ export function Settings() {
           )}
 
           {!accessStore.hideUserApiKey ? (
-            <ListItem
-              title={Locale.Settings.Token.Title}
-              subTitle={Locale.Settings.Token.SubTitle}
-            >
-              <PasswordInput
-                value={accessStore.token}
-                type="text"
-                placeholder={Locale.Settings.Token.Placeholder}
-                onChange={(e) => {
-                  accessStore.updateToken(e.currentTarget.value);
-                }}
-              />
-            </ListItem>
+            <>
+              <ListItem
+                title={Locale.Settings.Endpoint.Title}
+                subTitle={Locale.Settings.Endpoint.SubTitle}
+              >
+                <input
+                  type="text"
+                  value={accessStore.openaiUrl}
+                  placeholder="https://api.openai.com/"
+                  onChange={(e) =>
+                    accessStore.updateOpenAiUrl(e.currentTarget.value)
+                  }
+                ></input>
+              </ListItem>
+              <ListItem
+                title={Locale.Settings.Token.Title}
+                subTitle={Locale.Settings.Token.SubTitle}
+              >
+                <PasswordInput
+                  value={accessStore.token}
+                  type="text"
+                  placeholder={Locale.Settings.Token.Placeholder}
+                  onChange={(e) => {
+                    accessStore.updateToken(e.currentTarget.value);
+                  }}
+                />
+              </ListItem>
+            </>
           ) : null}
 
           {!accessStore.hideBalanceQuery ? (
@@ -617,22 +654,6 @@ export function Settings() {
                   onClick={() => checkUsage(true)}
                 />
               )}
-            </ListItem>
-          ) : null}
-
-          {!accessStore.hideUserApiKey ? (
-            <ListItem
-              title={Locale.Settings.Endpoint.Title}
-              subTitle={Locale.Settings.Endpoint.SubTitle}
-            >
-              <input
-                type="text"
-                value={accessStore.openaiUrl}
-                placeholder="https://api.openai.com/"
-                onChange={(e) =>
-                  accessStore.updateOpenAiUrl(e.currentTarget.value)
-                }
-              ></input>
             </ListItem>
           ) : null}
         </List>

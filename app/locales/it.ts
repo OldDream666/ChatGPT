@@ -87,8 +87,10 @@ const it: PartialLocaleType = {
       SubTitle: "Preview markdown in bubble",
     },
     Mask: {
-      Title: "Mask Splash Screen",
-      SubTitle: "Show a mask splash screen before starting new chat",
+      Splash: {
+        Title: "Mask Splash Screen",
+        SubTitle: "Show a mask splash screen before starting new chat",
+      },
     },
     Prompt: {
       Disable: {
@@ -155,11 +157,6 @@ const it: PartialLocaleType = {
       Title: "Penalità di frequenza",
       SubTitle:
         "Un valore maggiore che diminuisce la probabilità di ripetere la stessa riga",
-    },
-    GitHub: {
-      Title: "L'indirizzo GitHub di questo progetto",
-      Subtitle: "http://github.com/olddream666/ChatGPT",
-      Buttontext: "Vai a GitHub",
     },
   },
   Store: {

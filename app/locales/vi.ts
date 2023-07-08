@@ -87,8 +87,10 @@ const vi: PartialLocaleType = {
       SubTitle: "Xem trước nội dung markdown bằng bong bóng",
     },
     Mask: {
-      Title: "Mask Splash Screen",
-      SubTitle: "Chớp màn hình khi bắt đầu cuộc trò chuyện mới",
+      Splash: {
+        Title: "Mask Splash Screen",
+        SubTitle: "Chớp màn hình khi bắt đầu cuộc trò chuyện mới",
+      },
     },
     Prompt: {
       Disable: {
@@ -151,11 +153,6 @@ const vi: PartialLocaleType = {
     FrequencyPenalty: {
       Title: "Hình phạt tần suất",
       SubTitle: "Giá trị lớn hơn làm giảm khả năng lặp lại cùng một dòng",
-    },
-    GitHub: {
-      Title: "Địa chỉ GitHub của dự án này",
-      Subtitle: "http://github.com/olddream666/ChatGPT",
-      Buttontext: "Đi đến GitHub",
     },
   },
   Store: {

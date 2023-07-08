@@ -87,8 +87,10 @@ const ru: PartialLocaleType = {
       SubTitle: "Предварительный просмотр markdown в пузыре",
     },
     Mask: {
-      Title: "Экран заставки маски",
-      SubTitle: "Показывать экран заставки маски перед началом нового чата",
+      Splash: {
+        Title: "Экран заставки маски",
+        SubTitle: "Показывать экран заставки маски перед началом нового чата",
+      },
     },
     Prompt: {
       Disable: {
@@ -155,11 +157,6 @@ const ru: PartialLocaleType = {
       Title: "Штраф за частоту",
       SubTitle:
         "Большее значение снижает вероятность повторения одной и той же строки",
-    },
-    GitHub: {
-      Title: "Адрес GitHub этого проекта",
-      Subtitle: "http://github.com/olddream666/ChatGPT",
-      Buttontext: "Перейти на GitHub",
     },
   },
   Store: {

@@ -87,8 +87,10 @@ const ko: PartialLocaleType = {
       SubTitle: "버블에서 마크다운 미리 보기",
     },
     Mask: {
-      Title: "마스크 시작 화면",
-      SubTitle: "새로운 채팅 시작 전에 마스크 시작 화면 표시",
+      Splash: {
+        Title: "마스크 시작 화면",
+        SubTitle: "새로운 채팅 시작 전에 마스크 시작 화면 표시",
+      },
     },
     Prompt: {
       Disable: {
@@ -151,11 +153,6 @@ const ko: PartialLocaleType = {
     FrequencyPenalty: {
       Title: "빈도 페널티(frequency penalty)",
       SubTitle: "값이 클수록 같은 줄이 반복될 가능성이 줄어듭니다.",
-    },
-    GitHub: {
-      Title: "이 프로젝트의 GitHub 주소",
-      Subtitle: "http://github.com/olddream666/ChatGPT",
-      Buttontext: "GitHub으로 이동",
     },
   },
   Store: {
