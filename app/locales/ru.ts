@@ -71,6 +71,11 @@ const ru: PartialLocaleType = {
       Title: "Размер шрифта",
       SubTitle: "Настроить размер шрифта контента чата",
     },
+    InjectSystemPrompts: {
+      Title: "Вставить системные подсказки",
+      SubTitle:
+        "Принудительно добавить симулированную системную подсказку ChatGPT в начало списка сообщений для каждого запроса",
+    },
     Update: {
       Version: (x: string) => `Версия: ${x}`,
       IsLatest: "Последняя версия",
@@ -87,8 +92,10 @@ const ru: PartialLocaleType = {
       SubTitle: "Предварительный просмотр markdown в пузыре",
     },
     Mask: {
-      Title: "Экран заставки маски",
-      SubTitle: "Показывать экран заставки маски перед началом нового чата",
+      Splash: {
+        Title: "Экран заставки маски",
+        SubTitle: "Показывать экран заставки маски перед началом нового чата",
+      },
     },
     Prompt: {
       Disable: {
@@ -155,11 +162,6 @@ const ru: PartialLocaleType = {
       Title: "Штраф за частоту",
       SubTitle:
         "Большее значение снижает вероятность повторения одной и той же строки",
-    },
-    GitHub: {
-      Title: "Адрес GitHub этого проекта",
-      Subtitle: "http://github.com/olddream666/ChatGPT",
-      Buttontext: "Перейти на GitHub",
     },
   },
   Store: {
