@@ -71,6 +71,11 @@ const es: PartialLocaleType = {
       Title: "Tamaño de fuente",
       SubTitle: "Ajustar el tamaño de fuente del contenido del chat",
     },
+    InjectSystemPrompts: {
+      Title: "Inyectar Prompts del Sistema",
+      SubTitle:
+        "Agregar forzosamente un prompt de sistema simulado de ChatGPT al comienzo de la lista de mensajes en cada solicitud",
+    },
     Update: {
       Version: (x: string) => `Versión: ${x}`,
       IsLatest: "Última versión",
@@ -87,8 +92,10 @@ const es: PartialLocaleType = {
       SubTitle: "Preview markdown in bubble",
     },
     Mask: {
-      Title: "Mask Splash Screen",
-      SubTitle: "Show a mask splash screen before starting new chat",
+      Splash: {
+        Title: "Mask Splash Screen",
+        SubTitle: "Show a mask splash screen before starting new chat",
+      },
     },
     Prompt: {
       Disable: {
@@ -154,11 +161,6 @@ const es: PartialLocaleType = {
       Title: "Penalización de frecuencia",
       SubTitle:
         "Un valor mayor que disminuye la probabilidad de repetir la misma línea",
-    },
-    GitHub: {
-      Title: "La dirección de GitHub de este proyecto",
-      Subtitle: "http://github.com/olddream666/ChatGPT",
-      Buttontext: "Ir a GitHub",
     },
   },
   Store: {

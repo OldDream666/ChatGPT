@@ -69,6 +69,10 @@ const tw: PartialLocaleType = {
       Title: "字型大小",
       SubTitle: "聊天內容的字型大小",
     },
+    InjectSystemPrompts: {
+      Title: "注入系統提示",
+      SubTitle: "強制在每個請求的訊息列表開頭添加一個模擬 ChatGPT 的系統提示",
+    },
     Update: {
       Version: (x: string) => `當前版本：${x}`,
       IsLatest: "已是最新版本",
@@ -85,8 +89,10 @@ const tw: PartialLocaleType = {
       SubTitle: "在预览气泡中预览 Markdown 内容",
     },
     Mask: {
-      Title: "面具启动页",
-      SubTitle: "新建聊天时，展示面具启动页",
+      Splash: {
+        Title: "面具启动页",
+        SubTitle: "新建聊天时，展示面具启动页",
+      },
     },
     Prompt: {
       Disable: {
@@ -149,11 +155,6 @@ const tw: PartialLocaleType = {
     FrequencyPenalty: {
       Title: "頻率懲罰度 (frequency_penalty)",
       SubTitle: "值越大，越有可能降低重複字詞",
-    },
-    GitHub: {
-      Title: "該項目GitHub地址",
-      Subtitle: "http://github.com/olddream666/ChatGPT",
-      Buttontext: "點擊前往",
     },
   },
   Store: {
