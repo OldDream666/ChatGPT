@@ -4,7 +4,9 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "访问密码不正确或为空，请前往[验证](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+    "访问密码不正确或为空，请前往[验证](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。\n___\
+    \n如果您没有 OpenAI API Key，可以考虑使用本站的**API中转服务**，价格与 OpenAI 完全保持一致。\n\
+    \n中转地址：[中转API](https://api.olddream.xyz) | [爱发电地址](https://afdian.net/a/olddream)",
   },
   Auth: {
     Title: "需要密码",
@@ -262,7 +264,9 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: "欢迎访问OD-ChatGPT，在[设置](/#/settings)页中填写自己的API即可正常使用！\n___\
+    \n如果您没有 OpenAI API Key，可以考虑使用本站的**API中转服务**，价格与 OpenAI 完全保持一致。\n\
+    \n中转地址：[中转API](https://api.olddream.xyz) | [爱发电地址](https://afdian.net/a/olddream)",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
