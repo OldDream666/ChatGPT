@@ -1,17 +1,20 @@
+import { getClientConfig } from "../config/client";
 import { SubmitKey } from "../store/config";
+
+const isApp = !!getClientConfig()?.isApp;
 
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized:
-    "访问密码不正确或为空，请前往[验证](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。\n___\
-    \n如果您没有 OpenAI API Key，可以考虑使用本站的**API中转服务**，价格与 OpenAI 完全保持一致。\n\
-    \n中转地址：[中转API](https://api.olddream.xyz) | [爱发电地址](https://afdian.net/a/olddream)",
+    Unauthorized: isApp
+      ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
+      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
   },
   Auth: {
     Title: "需要密码",
-    Tips: "管理员开启了密码验证，请在下方填入访问密码",
-    Input: "在此处填写访问密码",
+    Tips: "管理员开启了密码验证，请在下方填入访问码",
+    SubTips: "或者输入你的 OpenAI API 密钥",
+    Input: "在此处填写访问码",
     Confirm: "确认",
     Later: "稍后再说",
   },
@@ -21,6 +24,7 @@ const cn = {
   Chat: {
     SubTitle: (count: number) => `共 ${count} 条对话`,
     EditMessage: {
+      Title: "编辑消息记录",
       Topic: {
         Title: "聊天主题",
         SubTitle: "更改当前聊天主题",
@@ -171,6 +175,53 @@ const cn = {
       Title: "预览气泡",
       SubTitle: "在预览气泡中预览 Markdown 内容",
     },
+    AutoGenerateTitle: {
+      Title: "自动生成标题",
+      SubTitle: "根据对话内容生成合适的标题",
+    },
+    Sync: {
+      CloudState: "云端数据",
+      NotSyncYet: "还没有进行过同步",
+      Success: "同步成功",
+      Fail: "同步失败",
+
+      Config: {
+        Modal: {
+          Title: "配置云同步",
+          Check: "检查可用性",
+        },
+        SyncType: {
+          Title: "同步类型",
+          SubTitle: "选择喜爱的同步服务器",
+        },
+        Proxy: {
+          Title: "启用代理",
+          SubTitle: "在浏览器中同步时，必须启用代理以避免跨域限制",
+        },
+        ProxyUrl: {
+          Title: "代理地址",
+          SubTitle: "仅适用于本项目自带的跨域代理",
+        },
+
+        WebDav: {
+          Endpoint: "WebDAV 地址",
+          UserName: "用户名",
+          Password: "密码",
+        },
+
+        UpStash: {
+          Endpoint: "UpStash Redis REST Url",
+          UserName: "备份名称",
+          Password: "UpStash Redis REST Token",
+        },
+      },
+
+      LocalState: "本地数据",
+      Overview: (overview: any) => {
+        return `${overview.chat} 次对话，${overview.message} 条消息，${overview.prompt} 条提示词，${overview.mask} 个面具`;
+      },
+      ImportFailed: "导入失败",
+    },
     Mask: {
       Splash: {
         Title: "面具启动页",
@@ -264,9 +315,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "欢迎访问OD-ChatGPT，在[设置](/#/settings)页中填写自己的API即可正常使用！\n___\
-    \n如果您没有 OpenAI API Key，可以考虑使用本站的**API中转服务**，价格与 OpenAI 完全保持一致。\n\
-    \n中转地址：[中转API](https://api.olddream.xyz) | [爱发电地址](https://afdian.net/a/olddream)",
+    BotHello: "有什么可以帮你的吗",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
@@ -280,15 +329,22 @@ const cn = {
     Success: "已写入剪切板",
     Failed: "复制失败，请赋予剪切板权限",
   },
+  Download: {
+    Success: "内容已下载到您的目录。",
+    Failed: "下载失败。",
+  },
   Context: {
     Toast: (x: any) => `包含 ${x} 条预设提示词`,
     Edit: "当前对话设置",
-    Add: "新增预设对话",
+    Add: "新增一条对话",
     Clear: "上下文已清除",
     Revert: "恢复上下文",
   },
   Plugin: {
     Name: "插件",
+  },
+  FineTuned: {
+    Sysmessage: "你是一个助手",
   },
   Mask: {
     Name: "面具",
@@ -352,6 +408,10 @@ const cn = {
     Close: "关闭",
     Create: "新建",
     Edit: "编辑",
+    Export: "导出",
+    Import: "导入",
+    Sync: "同步",
+    Config: "配置",
   },
   Exporter: {
     Model: "模型",
