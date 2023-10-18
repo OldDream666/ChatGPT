@@ -1,13 +1,9 @@
-## 写在开头
-关于本项目的声明：<br>
-本项目基于[ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web)进行二次开发，目前正在开发中，下面信息为原作者信息，暂未进行修改，仅做参考。考虑到原项目仍在维护更新，原项目停更后，即该项目完全脱离并进行自主更新。
----
 <div align="center">
 <img src="./docs/images/icon.svg" alt="icon"/>
 
 <h1 align="center">ChatGPT Next Web</h1>
 
-English / [简体中文](./README_CN.md)
+English / [简体中文](./README_CN.md) / [日本語](./README_JA.md)
 
 One-Click to get well-designed cross-platform ChatGPT web UI.
 
@@ -18,7 +14,7 @@ One-Click to get well-designed cross-platform ChatGPT web UI.
 [![MacOS][MacOS-image]][download-url]
 [![Linux][Linux-image]][download-url]
 
-[Web App](https://chatgpt.nextweb.fun/) / [Desktop App](https://github.com/Yidadaa/ChatGPT-Next-Web/releases) / [Issues](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [Discord](https://discord.gg/YCkeafCafC) / [Buy Me a Coffee](https://www.buymeacoffee.com/yidadaa)
+[Web App](https://chatgpt.nextweb.fun/) / [Desktop App](https://github.com/Yidadaa/ChatGPT-Next-Web/releases) / [Discord](https://discord.gg/YCkeafCafC) / [Twitter](https://twitter.com/mortiest_ricky) / [Buy Me a Coffee](https://www.buymeacoffee.com/yidadaa)
 
 [网页版](https://chatgpt.nextweb.fun/) / [客户端](https://github.com/Yidadaa/ChatGPT-Next-Web/releases) / [反馈](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [QQ 群](https://github.com/Yidadaa/ChatGPT-Next-Web/discussions/1724) / [打赏开发者](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg)
 
@@ -49,7 +45,7 @@ One-Click to get well-designed cross-platform ChatGPT web UI.
 - New in v2: create, share and debug your chat tools with prompt templates (mask)
 - Awesome prompts powered by [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) and [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 - Automatically compresses chat history to support long conversations while also saving your tokens
-- I18n: English, 简体中文, 繁体中文, 日本語, Français, Español, Italiano, Türkçe, Deutsch, Tiếng Việt, Русский, Čeština, 한국어
+- I18n: English, 简体中文, 繁体中文, 日本語, Français, Español, Italiano, Türkçe, Deutsch, Tiếng Việt, Русский, Čeština, 한국어, Indonesia
 
 ## Roadmap
 
@@ -139,7 +135,7 @@ After forking the project, due to the limitations imposed by GitHub, you need to
 
 If you want to update instantly, you can check out the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to synchronize a forked project with upstream code.
 
-You can star or watch this project or follow author to get release notifictions in time.
+You can star or watch this project or follow author to get release notifications in time.
 
 ## Access Password
 
@@ -163,7 +159,7 @@ Your openai api key.
 
 ### `CODE` (optional)
 
-Access passsword, separated by comma.
+Access password, separated by comma.
 
 ### `BASE_URL` (optional)
 
@@ -234,8 +230,8 @@ yarn dev
 docker pull yidadaa/chatgpt-next-web
 
 docker run -d -p 3000:3000 \
-   -e OPENAI_API_KEY="sk-xxxx" \
-   -e CODE="your-password" \
+   -e OPENAI_API_KEY=sk-xxxx \
+   -e CODE=your-password \
    yidadaa/chatgpt-next-web
 ```
 
@@ -243,9 +239,9 @@ You can start service behind a proxy:
 
 ```shell
 docker run -d -p 3000:3000 \
-   -e OPENAI_API_KEY="sk-xxxx" \
-   -e CODE="your-password" \
-   -e PROXY_URL="http://localhost:7890" \
+   -e OPENAI_API_KEY=sk-xxxx \
+   -e CODE=your-password \
+   -e PROXY_URL=http://localhost:7890 \
    yidadaa/chatgpt-next-web
 ```
 
@@ -260,6 +256,20 @@ If your proxy needs password, use:
 ```shell
 bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/scripts/setup.sh)
 ```
+
+## Synchronizing Chat Records (UpStash)
+
+| [简体中文](./docs/synchronise-chat-logs-cn.md) | [English](./docs/synchronise-chat-logs-en.md) | [Italiano](./docs/synchronise-chat-logs-es.md) | [日本語](./docs/synchronise-chat-logs-ja.md) | [한국어](./docs/synchronise-chat-logs-ko.md)
+
+## Documentation
+
+> Please go to the [docs][./docs] directory for more documentation instructions.
+
+- [Deploy with cloudflare (Deprecated)](./docs/cloudflare-pages-en.md)
+- [Frequent Ask Questions](./docs/faq-en.md)
+- [How to add a new translation](./docs/translation.md)
+- [How to use Vercel (No English)](./docs/vercel-cn.md)
+- [User Manual (Only Chinese, WIP)](./docs/user-manual-cn.md)
 
 ## Screenshots
 
@@ -303,6 +313,7 @@ If you want to add a new translation, read this [document](./docs/translation.md
 [@AnsonHyq](https://github.com/AnsonHyq)
 [@synwith](https://github.com/synwith)
 [@piksonGit](https://github.com/piksonGit)
+[@ouyangzhiping](https://github.com/ouyangzhiping)
 
 ### Contributor
 
